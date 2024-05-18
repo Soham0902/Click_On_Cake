@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="angular.js"></script>
+    <title>Registration form</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            background-color:#d8dbfb ;
+        }
+        .top{
+            width: 100%;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            padding-left: 120px;
+            height: 180px;
+        }
+        .top img{
+            width: 120px;
+            height: 120px;
+        }
+        .navi{
+           width:90%;
+           height: 80px;
+           margin-top:20px ;
+           /* margin-right: 20px; */
+           background-color: #b2b7f5;
+           float: right;
+        }
+        .navi h1{
+           font-size: xx-large;
+           font-weight: bolder;
+           font-family: 'Times New Roman', Times, serif;
+           align-self: left;
+           padding: 10px;
+           color: black;
+        }
+        /* .navi ul li{
+            list-style: none;
+            display: inline-block;
+            padding: 13px;
+            position: relative;
+            float: right;
+        }
+        .navi ul li a{
+            color:black;
+            text-decoration: none;
+            font-size: 24px;
+            font-weight: bolder;
+        }
+        #login, #create{
+            border-radius: 20px;
+            padding: 0px;
+            background-color: #b2b7f5;
+        } */
+        .was-validated{
+            padding: 100px;
+            color: black;
+            border: black solid 2px;
+            margin: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="top">
+            <a href="index.html">
+                <img src="Assets/Logo.jpg" alt="Logo">
+            </a>
+            <div class="navi">
+                    <h1>Register your Shop</h1>
+                     <!-- <ul>
+                        <button id="login">
+                            <li><a href="login_user.html">Login</a></li>
+                        </button>
+                        <button id="create">
+                            <li><a href="create_Account.html">Sign up</a></li>
+                        </button>
+                     </ul> -->
+            </div>
+    </div>
+    <div>
+        <form action="submit.php" name="input_shops" method="post" novalidate>
+            <div class="mb-3">
+              <label for="validationTextarea" class="form-label">Textarea</label>
+              <textarea class="form-control is-invalid" id="validationTextarea" placeholder="Required example textarea" required></textarea>
+              <div class="invalid-feedback">
+                Please enter a message in the textarea.
+              </div>
+            </div>
+          
+            <div class="form-check mb-3">
+              <input type="checkbox" class="form-check-input" id="validationFormCheck1" required>
+              <label class="form-check-label" for="validationFormCheck1">Check this checkbox</label>
+              <div class="invalid-feedback">Example invalid feedback text</div>
+            </div>
+          
+            <div class="form-check">
+              <input type="radio" class="form-check-input" id="validationFormCheck2" name="radio-stacked" required>
+              <label class="form-check-label" for="validationFormCheck2">Toggle this radio</label>
+            </div>
+            <div class="form-check mb-3">
+              <input type="radio" class="form-check-input" id="validationFormCheck3" name="radio-stacked" required>
+              <label class="form-check-label" for="validationFormCheck3">Or toggle this other radio</label>
+              <div class="invalid-feedback">More example invalid feedback text</div>
+            </div>
+          
+            <div class="mb-3">
+              <select class="form-select" required aria-label="select example">
+                <option value="">Open this select menu</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+              <div class="invalid-feedback">Example invalid select feedback</div>
+            </div>
+          
+            <div class="mb-3">
+              <input type="file" class="form-control" aria-label="file example" required>
+              <div class="invalid-feedback">Example invalid form file feedback</div>
+            </div>
+          
+            <div class="mb-3">
+              <button class="btn btn-primary" type="submit" disabled>Submit form</button>
+            </div>
+          </form>
+    </div>
+    
+</body>
+</html>

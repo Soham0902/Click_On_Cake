@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore</title>
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body class="">  
+    <nav>
+        <a href="index.html">
+            <img src="Assets/Logo.jpg">
+        </a>
+        <div class="nav-links"><i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li id="heading"><h2>Click on Cake</h2></li>
+                <li><a href="about.html">About</a></li>
+                <!-- <li><a href="City.html">Cities</a></li> -->
+                <!-- <li><a href="explore.html">Explore</a></li> -->
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars"onclick="showMenu()"></i>
+    </nav>
+    <div class="container">
+        <header>
+            <h1>Your Shopping Cart</h1>
+            <div class="shopping">
+                <img src="Assets/shopping.svg">
+                <span class="quantity">0</span>
+            </div>
+        </header>
+
+        <div class="list">
+          
+        </div>
+    </div>
+    <div class="card">
+        <h1>Cart</h1>
+        <ul class="listCard">
+        </ul>
+        <div class="checkOut">
+            <a href="checkout.html" id="ammount"><div class="total">0</div></a>
+            <div class="closeShopping">Close</div>
+        </div>
+    </div><br><br><br>
+    <footer id="foot">
+        <br>
+        &copy; copy rights reserved 2023
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
